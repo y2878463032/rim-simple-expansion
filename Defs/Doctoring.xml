@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 解除食物中毒手术 -->
+<RecipeDef ParentName="SurgeryFlesh">
+    <defName>EZR_RemoveFP</defName>
+    <label>✦解除食物中毒</label>
+    <description>为目标解除食物中毒</description>
+    <jobString>正在解除食物中毒</jobString>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <removesHediff>FoodPoisoning</removesHediff>
+    <displayPriority>0</displayPriority>
+    <workAmount>6</workAmount>
+    <surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>true</isViolation>
+    <targetsBodyPart>false</targetsBodyPart>
+</RecipeDef>
+
+<!-- == 捆绑手术 == -->
+
+<!-- 捆绑状态-->
+<HediffDef>
+    <defName>EZR_BoundHediff</defName>
+    <label>被捆绑</label>
+    <description>移动能力设置为0%</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem><!-- 无法治愈 -->
+    <defaultLabelColor>(0.811, 0.834, 0.321)</defaultLabelColor>
+    <isBad>false</isBad><!-- 非负面效果 -->
+    <maxSeverity>1</maxSeverity><!-- 最大严重度，单阶段 -->
+    <stages>
+        <li>
+            <label>无法动弹</label>
+            <minSeverity>1</minSeverity>
+            <painOffset>0.1</painOffset>
+            <capMods>
+                <li>
+                    <capacity>Moving</capacity>
+                    <setMax>0</setMax>
+                </li>
+            </capMods>
+        </li>
+    </stages>
+</HediffDef>
+
+<!-- 捆绑手术 -->
+<RecipeDef ParentName="SurgeryFlesh">
+    <defName>EZR_Bound</defName>
+    <label>✦捆绑</label>
+    <description>将目标捆绑起来，使其丧失行动能力</description>
+    <jobString>正在捆绑</jobString>
+    <workerClass>Recipe_AddHediff</workerClass>
+    <addsHediff>EZR_BoundHediff</addsHediff>
+    <displayPriority>0</displayPriority>
+    <workAmount>6</workAmount>
+    <surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>true</isViolation>
+    <targetsBodyPart>false</targetsBodyPart>
+</RecipeDef>
+
+<!-- 解绑手术 -->
+<RecipeDef ParentName="SurgeryFlesh">
+    <defName>EZR_RemoveBound</defName>
+    <label>✦解绑</label>
+    <description>将目标解绑</description>
+    <jobString>正在解绑</jobString>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <removesHediff>EZR_BoundHediff</removesHediff>
+    <displayPriority>0</displayPriority>
+    <workAmount>6</workAmount>
+    <surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>true</isViolation>
+    <targetsBodyPart>false</targetsBodyPart>
+</RecipeDef>
+
+</Defs>
