@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+<name>简易配方</name>
+<author>lsatter</author>
+
+<supportedVersions>
+    <li>1.6</li>
+</supportedVersions>
+
+<modDependencies>
+  <li>
+    <packageId>Ludeon.RimWorld</packageId>
+    <displayName>RimWorld</displayName>
+  </li>
+</modDependencies>
+
+<loadAfter>
+    <li>Ludeon.RimWorld</li>
+</loadAfter>
+	
+<packageId>lsatter.EZRepices</packageId>
+
+<description>
+增加一些配方，详见README文件
+</description>
+
+</ModMetaData>
