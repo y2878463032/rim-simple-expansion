@@ -25,7 +25,7 @@
         <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
         <Nutrition>0.05</Nutrition>
     </statBases>
-    <stackLimit>100</stackLimit>
+    <stackLimit>150</stackLimit>
     <ingestible>
         <preferability>RawBad</preferability>
         <tasteThought>AteRawFood</tasteThought>
@@ -99,7 +99,7 @@
         <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
         <Nutrition>0.05</Nutrition>
     </statBases>
-    <stackLimit>100</stackLimit>
+    <stackLimit>150</stackLimit>
     <socialPropernessMatters>true</socialPropernessMatters>
     <allowedArchonexusCount>200</allowedArchonexusCount>
     <ingestible>
