@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+    <defName>EZR_MakeReinforcedBarrel</defName>
+    <label>制作加固炮管</label>
+    <description>小规模生产加固炮管，生产效率远不如专业设施</description>
+    <jobString>制作加固炮管</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workSkill>Intellectual</workSkill>
+    <displayPriority>1001</displayPriority>
+    <workAmount>9000</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+        <li>TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Steel</li>
+                </thingDefs>
+            </filter>
+            <count>225</count>
+        </li>
+    </ingredients>
+    <products>
+        <ReinforcedBarrel>1</ReinforcedBarrel>
+    </products>
+</RecipeDef>
+
+</Defs>

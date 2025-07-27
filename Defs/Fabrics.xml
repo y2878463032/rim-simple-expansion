@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 创造超织物配方 -->
+<RecipeDef>
+    <defName>EZR_MakeHyperweave</defName>
+    <label>创造超织物</label>
+    <description>使用布来创造超织物</description>
+    <jobString>创造超织物</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <displayPriority>1005</displayPriority>
+    <workAmount>6</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+    </recipeUsers>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Cloth</li>
+                </thingDefs>
+            </filter>
+            <count>150</count>
+        </li>
+    </ingredients>
+    <products>
+        <Hyperweave>25</Hyperweave>
+    </products>
+</RecipeDef>
+
+<!-- 创造普通皮革配方 -->
+<RecipeDef>
+    <defName>EZR_MakeLeatherPlain</defName>
+    <label>创造普通皮革</label>
+    <description>将其他皮革与毛料混一制作成普通皮革</description>
+    <jobString>创造普通皮革</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <displayPriority>1001</displayPriority>
+    <workAmount>6</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+    </recipeUsers>
+    <ingredients>
+        <li>
+            <filter>
+                <categories>
+                    <li>Leathers</li>
+                    <li>Wools</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Leather_Thrumbo</li>
+                </disallowedThingDefs>
+            </filter>
+            <count>75</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <categories>
+            <li>Leathers</li>
+            <li>Wools</li>
+        </categories>
+        <disallowedThingDefs>
+            <li>Leather_Plain</li>
+        </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Leather_Plain>75</Leather_Plain>
+    </products>
+</RecipeDef>
+
+<!-- 创造敲击兽皮 -->
+<RecipeDef>
+    <defName>EZR_MakeLeatherThrumbo</defName>
+    <label>创造敲击兽皮</label>
+    <description>将其他皮革与毛料取其精华制作成不输与敲击兽皮革</description>
+    <jobString>创造敲击兽皮</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <displayPriority>1002</displayPriority>
+    <workAmount>6</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+    </recipeUsers>
+    <ingredients>
+        <li>
+            <filter>
+                <categories>
+                    <li>Leathers</li>
+                    <li>Wools</li>
+                </categories>
+            </filter>
+            <count>225</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <categories>
+            <li>Leathers</li>
+            <li>Wools</li>
+        </categories>
+        <disallowedThingDefs>
+            <li>Leather_Thrumbo</li>
+        </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Leather_Thrumbo>25</Leather_Thrumbo>
+    </products>
+</RecipeDef>
+
+</Defs>
