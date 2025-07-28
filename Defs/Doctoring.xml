@@ -17,6 +17,39 @@
     <targetsBodyPart>false</targetsBodyPart>
 </RecipeDef>
 
+<!-- 治愈基因重组 -->
+<RecipeDef ParentName="SurgeryFlesh">
+    <defName>EZR_RemoveXR</defName>
+    <label>治疗基因重组</label>
+    <description>通过使用珍贵的闪耀世界医药来治愈基因重组</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>治愈基因重组</jobString>
+    <workAmount>2000</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>false</isViolation>
+    <targetsBodyPart>false</targetsBodyPart>
+    <removesHediff>XenogermReplicating</removesHediff>
+    <successfullyRemovedHediffMessage>{1}的基因重组已治愈</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+</RecipeDef>
+
 <!-- == 捆绑手术 == -->
 
 <!-- 捆绑状态-->

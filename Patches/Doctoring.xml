@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-<Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
-        <li Class="PatchOperationTest">
-            <xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
-        </li>
-        <li Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
-            <value>
-                <li>EZR_RemoveFP</li>
-                <li>EZR_Bound</li>
-                <li>EZR_RemoveBound</li>
-            </value>
-        </li>
-    </operations>
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
+    <value>
+        <li>EZR_RemoveFP</li>
+        <li>EZR_RemoveXR</li>
+        <li>EZR_Bound</li>
+        <li>EZR_RemoveBound</li>
+    </value>
 </Operation>
 
 </Patch>
