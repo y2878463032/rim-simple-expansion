@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-<name>简易配方</name>
+<name>[LS]原版优化</name>
 <author>lsatter</author>
 
 <supportedVersions>
@@ -21,7 +21,7 @@
 <packageId>lsatter.EZRepices</packageId>
 
 <description>
-增加一些配方，详见README文件
+增加一些配方和修改，用于优化原版体验，详见README文件
 </description>
 
 </ModMetaData>
