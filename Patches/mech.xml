@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- 建造机 -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Mech_Constructoid"]/race</xpath>
+    <value>
+        <mechFixedSkillLevel>15</mechFixedSkillLevel>
+    </value>
+</Operation>
+
+<!-- 园艺机 -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Mech_Agrihand"]/race</xpath>
+    <value>
+        <mechFixedSkillLevel>15</mechFixedSkillLevel>
+    </value>
+</Operation>
+
+<!-- 掘进机 -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Mech_Tunneler"]/race</xpath>
+    <value>
+        <mechFixedSkillLevel>15</mechFixedSkillLevel>
+    </value>
+</Operation>
+
+<!-- 工艺机 -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Mech_Fabricor"]/race</xpath>
+    <value>
+        <mechFixedSkillLevel>15</mechFixedSkillLevel>
+    </value>
+</Operation>
+
+<!-- 救护机 -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Mech_Paramedic"]/race</xpath>
+    <value>
+        <mechFixedSkillLevel>15</mechFixedSkillLevel>
+    </value>
+</Operation>
+
+</Patch>
