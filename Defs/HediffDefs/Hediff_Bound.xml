@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 捆绑状态-->
+<HediffDef> 
+    <defName>LSSE_BoundHediff</defName>
+    <label>被捆绑</label>
+    <description>移动能力设置为0%</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <everCurableByItem>false</everCurableByItem><!-- 无法治愈 -->
+    <defaultLabelColor>(0.811, 0.834, 0.321)</defaultLabelColor>
+    <isBad>false</isBad><!-- 非负面效果 -->
+    <maxSeverity>1</maxSeverity><!-- 最大严重度，单阶段 -->
+    <stages>
+        <li>
+            <label>无法动弹</label>
+            <minSeverity>1</minSeverity>
+            <painOffset>0.1</painOffset>
+            <capMods>
+                <li>
+                    <capacity>Moving</capacity>
+                    <setMax>0</setMax>
+                </li>
+            </capMods>
+        </li>
+    </stages>
+</HediffDef>
+
+</Defs>

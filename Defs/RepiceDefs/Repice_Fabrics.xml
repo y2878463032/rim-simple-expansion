@@ -3,7 +3,7 @@
 
 <!-- 创造超织物配方 -->
 <RecipeDef>
-    <defName>EZR_MakeHyperweave</defName>
+    <defName>LSSE_MakeHyperweave</defName>
     <label>创造超织物</label>
     <description>使用布来创造超织物</description>
     <jobString>创造超织物</jobString>
@@ -35,7 +35,7 @@
 
 <!-- 创造普通皮革配方 -->
 <RecipeDef>
-    <defName>EZR_MakeLeatherPlain</defName>
+    <defName>LSSE_MakeLeatherPlain</defName>
     <label>创造普通皮革</label>
     <description>将其他皮革与毛料混一制作成普通皮革</description>
     <jobString>创造普通皮革</jobString>
@@ -80,7 +80,7 @@
 
 <!-- 创造敲击兽皮 -->
 <RecipeDef>
-    <defName>EZR_MakeLeatherThrumbo</defName>
+    <defName>LSSE_MakeLeatherThrumbo</defName>
     <label>创造敲击兽皮</label>
     <description>将其他皮革与毛料取其精华制作成不输与敲击兽皮革</description>
     <jobString>创造敲击兽皮</jobString>

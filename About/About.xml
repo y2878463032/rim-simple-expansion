@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-<name>[LS]原版优化</name>
+<name>[LS]简易拓展</name>
 <author>lsatter</author>
 
 <supportedVersions>
@@ -18,10 +18,10 @@
     <li>Ludeon.RimWorld</li>
 </loadAfter>
 	
-<packageId>lsatter.EZRepices</packageId>
+<packageId>lsatter.SimpleExpansion</packageId>
 
 <description>
-增加一些配方和修改，用于优化原版体验，详见README文件
+增加一些材料、配方和手术，用于优化原版体验，详见README文件
 </description>
 
 </ModMetaData>

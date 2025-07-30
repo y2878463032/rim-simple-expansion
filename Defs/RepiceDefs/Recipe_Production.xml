@@ -2,7 +2,7 @@
 <Defs>
 
 <RecipeDef>
-    <defName>EZR_MakeReinforcedBarrel</defName>
+    <defName>LSSE_MakeReinforcedBarrel</defName>
     <label>制作加固炮管</label>
     <description>小规模生产加固炮管，生产效率远不如专业设施</description>
     <jobString>制作加固炮管</jobString>

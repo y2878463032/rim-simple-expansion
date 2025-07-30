@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 包装食物分类 -->
+<ThingCategoryDef>
+	<defName>LSSE_PackedRawPlant</defName>
+	<label>包装食物</label>
+	<parent>FoodRaw</parent>
+</ThingCategoryDef>
+
+</Defs>

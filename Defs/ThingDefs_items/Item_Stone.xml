@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 粗制石砖，在大理石石砖基础上魔改成 -->
+<ThingDef ParentName="StoneBlocksBase">
+    <defName>LSSE_BlocksRaw</defName>
+    <label>粗制石砖</label>
+    <description>一块粗制的石砖，能够通过后期处理转化成其他石砖</description>
+    <stackLimit>150</stackLimit> <!-- 高堆叠量以降低存储空间 -->
+    <graphicData>
+      <color>(132,135,132)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(132,135,132)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>粗制石砖</stuffAdjective>
+      <statFactors>
+        <Beauty>1.0</Beauty> <!-- 修改美观度以作区分 -->
+        <MaxHitPoints>1.2</MaxHitPoints>
+        <WorkToBuild>5.5</WorkToBuild>
+        <WorkToMake>1.15</WorkToMake>
+      </statFactors>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
+      <!-- 不作为默认推荐材料 -->
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+</ThingDef>
+
+</Defs>

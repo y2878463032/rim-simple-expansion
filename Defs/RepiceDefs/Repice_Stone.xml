@@ -1,42 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- 粗制石砖，在大理石石砖基础上魔改成 -->
-<ThingDef ParentName="StoneBlocksBase">
-    <defName>EZR_BlocksRaw</defName>
-    <label>粗制石砖</label>
-    <description>一块粗制的石砖，能够通过后期处理转化成其他石砖</description>
-    <stackLimit>150</stackLimit> <!-- 高堆叠量以降低存储空间 -->
-    <graphicData>
-      <color>(132,135,132)</color>
-    </graphicData>
-    <statBases>
-      <Mass>1.25</Mass>
-    </statBases>
-    <stuffProps>
-      <color>(132,135,132)</color>
-      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
-      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
-      <stuffAdjective>粗制石砖</stuffAdjective>
-      <statFactors>
-        <Beauty>1.0</Beauty> <!-- 修改美观度以作区分 -->
-        <MaxHitPoints>1.2</MaxHitPoints>
-        <WorkToBuild>5.5</WorkToBuild>
-        <WorkToMake>1.15</WorkToMake>
-      </statFactors>
-      <statOffsets>
-        <Beauty>1</Beauty>
-      </statOffsets>
-      <!-- 不作为默认推荐材料 -->
-      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
-    </stuffProps>
-</ThingDef>
-
 <!-- 制作粗制石砖配方 -->
 <RecipeDef ParentName="MakeStoneBlocksBase">
-    <defName>EZR_MakeBlocksRaw</defName>
+    <defName>LSSE_MakeBlocksRaw</defName>
     <label>使用任意石块制作粗制石砖</label>
     <description>略</description>
     <jobString>制作粗制石砖...</jobString>
@@ -57,12 +24,12 @@
         </categories>
     </fixedIngredientFilter>
     <products>
-        <EZR_BlocksRaw>1</EZR_BlocksRaw>
+        <LSSE_BlocksRaw>1</LSSE_BlocksRaw>
     </products>
 </RecipeDef>
 
 <!-- 粗制石砖加工成其他石砖的抽象 -->
-<RecipeDef ParentName="MakeStoneBlocksBase" Name="EZR_RefinedBlocksRaw" Abstract="True">
+<RecipeDef ParentName="MakeStoneBlocksBase" Name="LSSE_RefinedBlocksRaw" Abstract="True">
     <description>略</description>
     <jobString>加工粗制石砖...</jobString>
     <workAmount>1</workAmount>
@@ -70,7 +37,7 @@
         <li>
             <filter>
                 <thingDefs>
-                    <li>EZR_BlocksRaw</li>
+                    <li>LSSE_BlocksRaw</li>
                 </thingDefs>
             </filter>
             <count>1</count>
@@ -78,14 +45,14 @@
     </ingredients>
     <fixedIngredientFilter>
         <categories>
-            <li>EZR_BlocksRaw</li>
+            <li>LSSE_BlocksRaw</li>
         </categories>
     </fixedIngredientFilter>
 </RecipeDef>
 
 <!-- 粗制石砖子增殖配方 -->
-<RecipeDef ParentName="EZR_RefinedBlocksRaw">
-    <defName>EZR_MakeBlocksRawLoop</defName>
+<RecipeDef ParentName="LSSE_RefinedBlocksRaw">
+    <defName>LSSE_MakeBlocksRawLoop</defName>
     <label>粗制石砖自增殖</label>
     <workAmount>1600</workAmount>
     <products>
@@ -94,8 +61,8 @@
 </RecipeDef>
 
 <!-- 再加工成花岗岩砖 -->
-<RecipeDef ParentName="EZR_RefinedBlocksRaw">
-    <defName>EZR_MakeBlocksGranite</defName>
+<RecipeDef ParentName="LSSE_RefinedBlocksRaw">
+    <defName>LSSE_MakeBlocksGranite</defName>
     <label>再加工成花岗岩砖</label>
     <products>
         <BlocksGranite>20</BlocksGranite>
@@ -103,8 +70,8 @@
 </RecipeDef>
 
 <!-- 再加工成石灰岩砖 -->
-<RecipeDef ParentName="EZR_RefinedBlocksRaw">
-    <defName>EZR_MakeBlocksLimestone</defName>
+<RecipeDef ParentName="LSSE_RefinedBlocksRaw">
+    <defName>LSSE_MakeBlocksLimestone</defName>
     <label>再加工成石灰岩砖</label>
     <products>
         <BlocksLimestone>20</BlocksLimestone>
@@ -112,8 +79,8 @@
 </RecipeDef>
 
 <!-- 再加工成大理岩砖 -->
-<RecipeDef ParentName="EZR_RefinedBlocksRaw">
-    <defName>EZR_MakeBlocksMarble</defName>
+<RecipeDef ParentName="LSSE_RefinedBlocksRaw">
+    <defName>LSSE_MakeBlocksMarble</defName>
     <label>再加工成大理岩砖</label>
     <products>
         <BlocksMarble>20</BlocksMarble>
@@ -121,8 +88,8 @@
 </RecipeDef>
 
 <!-- 再加工成砂岩砖 -->
-<RecipeDef ParentName="EZR_RefinedBlocksRaw">
-    <defName>EZR_MakeBlocksSandstone</defName>
+<RecipeDef ParentName="LSSE_RefinedBlocksRaw">
+    <defName>LSSE_MakeBlocksSandstone</defName>
     <label>再加工成砂岩砖</label>
     <products>
         <BlocksSandstone>20</BlocksSandstone>
@@ -130,8 +97,8 @@
 </RecipeDef>
 
 <!-- 再加工成板岩砖 -->
-<RecipeDef ParentName="EZR_RefinedBlocksRaw">
-    <defName>EZR_MakeBlocksSlate</defName>
+<RecipeDef ParentName="LSSE_RefinedBlocksRaw">
+    <defName>LSSE_MakeBlocksSlate</defName>
     <label>再加工成板岩砖</label>
     <products>
         <BlocksSlate>20</BlocksSlate>
@@ -139,8 +106,8 @@
 </RecipeDef>
 
 <!-- 再加工成真空岩砖 -->
-<RecipeDef ParentName="EZR_RefinedBlocksRaw">
-    <defName>EZR_MakeBlocksVacstone</defName>
+<RecipeDef ParentName="LSSE_RefinedBlocksRaw">
+    <defName>LSSE_MakeBlocksVacstone</defName>
     <label>再加工成真空岩砖</label>
     <products>
         <BlocksVacstone>20</BlocksVacstone>

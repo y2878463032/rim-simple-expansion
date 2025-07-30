@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 包装菜 -->
+<ThingDef ParentName="PlantFoodRawBase">
+    <defName>LSSE_PackedVegetable</defName>
+    <label>包装菜</label>
+    <description>能够长时间存储的脱水蔬菜</description>
+    <graphicData>
+        <texPath>Items/PackedVegetable</texPath>
+    </graphicData>
+    <statBases>
+        <MarketValue>0.2</MarketValue>
+        <SellPriceFactor>12</SellPriceFactor>
+        <Flammability>2</Flammability>
+        <DeteriorationRate>0.2</DeteriorationRate>
+        <FoodPoisonChance>0</FoodPoisonChance>
+        <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+        <Nutrition>0.05</Nutrition>
+    </statBases>
+    <stackLimit>150</stackLimit>
+    <ingestible>
+        <preferability>RawBad</preferability>
+        <tasteThought>AteRawFood</tasteThought>
+        <ingestEffect>EatVegetarian</ingestEffect>
+        <ingestSound>RawVegetable_Eat</ingestSound>
+        <foodType>Seed</foodType>
+    </ingestible>
+    <comps>
+        <li Class="CompProperties_Rottable">
+            <daysToRotStart>60</daysToRotStart>
+            <rotDestroys>true</rotDestroys>
+        </li>
+    </comps>
+    <thingCategories>
+        <li>LSSE_PackedRawPlant</li>
+    </thingCategories>
+</ThingDef>
+
+<!-- 包装肉 -->
+<ThingDef ParentName="OrganicProductBase">
+    <defName>LSSE_PackedMeat</defName>
+    <label>包装肉</label>
+    <description>能够长时间存储的脱水肉类</description>
+    <graphicData>
+        <texPath>Items/PackedMeat</texPath>
+    </graphicData>
+    <statBases>
+        <MarketValue>0.25</MarketValue>
+        <SellPriceFactor>12</SellPriceFactor>
+        <Flammability>2</Flammability>
+        <DeteriorationRate>0.2</DeteriorationRate>
+        <FoodPoisonChance>0</FoodPoisonChance>
+        <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+        <Nutrition>0.05</Nutrition>
+    </statBases>
+    <stackLimit>150</stackLimit>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <allowedArchonexusCount>200</allowedArchonexusCount>
+    <ingestible>
+        <preferability>RawBad</preferability>
+        <tasteThought>AteRawFood</tasteThought>
+        <ingestEffect>EatMeat</ingestEffect>
+        <ingestSound>RawMeat_Eat</ingestSound>
+        <foodType>Meat</foodType>
+    </ingestible>
+    <comps>
+        <li Class="CompProperties_Rottable">
+            <daysToRotStart>60</daysToRotStart>
+            <rotDestroys>true</rotDestroys>
+        </li>
+    </comps>
+    <thingCategories>
+        <li>LSSE_PackedRawPlant</li>
+    </thingCategories>
+</ThingDef>
+
+</Defs>

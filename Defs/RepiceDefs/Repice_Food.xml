@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 包装菜配方 -->
+<RecipeDef>
+    <defName>LSSE_MakePackedVegetable</defName>
+    <label>制作包装菜</label>
+    <description>将蔬菜、块茎或是谷物加工成干货，并包装起来。</description>
+    <jobString>制作包装菜。</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <displayPriority>1001</displayPriority>
+    <workAmount>6</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+        <li>TableButcher</li>
+    </recipeUsers>
+    <ingredients>
+        <li>
+            <filter>
+                <categories>
+                    <li>PlantFoodRaw</li>
+                </categories>
+            </filter>
+            <count>3.75</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <categories>
+            <li>PlantFoodRaw</li>
+        </categories>
+    </fixedIngredientFilter>
+    <products>
+        <LSSE_PackedVegetable>75</LSSE_PackedVegetable>
+    </products>
+</RecipeDef>
+
+<!-- 包装肉配方 -->
+<RecipeDef>
+    <defName>LSSE_MakePackedMeat</defName>
+    <label>制作包装肉</label>
+    <description>将鲜肉、内脏或是骨髓加工成干货，并包装起来。</description>
+    <jobString>制作包装肉。</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <displayPriority>1002</displayPriority>
+    <workAmount>6</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+        <li>TableButcher</li>
+    </recipeUsers>
+    <ingredients>
+        <li>
+            <filter>
+                <categories>
+                    <li>MeatRaw</li>
+                    <li>AnimalProductRaw</li>
+                </categories>
+            </filter>
+            <count>3.75</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+        </categories>
+    </fixedIngredientFilter>
+    <products>
+        <LSSE_PackedMeat>75</LSSE_PackedMeat>
+    </products>
+</RecipeDef>
+
+</Defs>
