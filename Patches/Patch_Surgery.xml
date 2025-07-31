@@ -4,10 +4,10 @@
 <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
     <value>
-        <li>EZR_RemoveFP</li>
-        <li>EZR_RemoveXR</li>
-        <li>EZR_Bound</li>
-        <li>EZR_RemoveBound</li>
+        <li>LSSE_RemoveFP</li>
+        <li>LSSE_RemoveXR</li>
+        <li>LSSE_Bound</li>
+        <li>LSSE_RemoveBound</li>
     </value>
 </Operation>
 
